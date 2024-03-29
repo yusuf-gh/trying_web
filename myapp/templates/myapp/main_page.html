@@ -1,41 +1,101 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/main_page.css' %}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'myapp/css/main_page.css' %}"
+    />
     <title>Main page</title>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="head">
-        <ul>         <!-- navbar -->
-            <li><a class="nav"href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">About us</a></li>
-        
-        </ul>
+      <ul>
+        <!-- navbar -->
+        <li><a class="nav" href="http://127.0.0.1:8000/home">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/news">News</a></li>
+        <li><a href="#">About us</a></li>
+        <li class="li-last"><a href="#">...</a></li>
+      </ul>
     </div>
 
+    <div id="main_title">
+      <h1>Рестораны в твоем городе</h1>
+    </div>
 
-
-    
     <div id="body">
+      <div class="text">{{ index1 }}</div>
+      <img id="aside1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/AntoinesDiningRoom8Oct07A.jpg/270px-AntoinesDiningRoom8Oct07A.jpg" alt="img">
+      <div id="text2">{{ index2 }}</div>
+      <img id="aside3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Petrus_%28London%29_Kitchen.jpg/270px-Petrus_%28London%29_Kitchen.jpg" alt="img">
+      <div class="text">{{ index3 }}</div>
+      <img id="aside2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tom%27s_Restaurant%2C_NYC.jpg/200px-Tom%27s_Restaurant%2C_NYC.jpg" alt="img">
+    </div>
+<!-- title through -->
+    <div class="title_through">
+      <h1>
+        Иетерестное
+      </h1>
+    </div>
+    <!-- CARDS -->
+    <div class="cards">
+      <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src =https://i.ytimg.com/vi/YRNkiZ2c7fo/maxresdefault.jpg>
+          </div>
+          <div class = content>
+            <h3>"Parisian Tavern"</h3>
+            <p>Первый ресторан, который открылся в мире, назывался "Parisian Tavern", и был открыт в Париже в 1765 году. Это было значительное событие, поскольку ранее публичное питание в ресторанах не было распространено.</p>
+          </div>
+        </div>    
+      </div>
 
+      <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src =https://www.musicofsalzburg.com/images/800/mozart-dinner.jpg>
+          </div>
+          <div class = content>
+            <h3>Stiftskeller St. Peter</h3>
+            <p>Самый старый ресторан, который до сих пор продолжает свою деятельность, находится в Швеции. Это ресторан под названием "Stiftskeller St. Peter", который открылся в 803 году в городе Зальцбург. Этот ресторан действует уже более 1200 лет и предлагает своим посетителям уникальную атмосферу и традиционные блюда.</p>
+          </div>
+        </div>    
+      </div>
 
+      <div class = container>
+        <div class = card>
+          <div class = image>
+            <img href = "#" src =https://purentonline.com/blog/wp-content/uploads/2016/06/Osteria-Francescana-Corner-table-Credit-Paolo-Terzi-e1465107117449.jpg>
+          </div>
+          <div class = content>
+            <h3>"Osteria Francescana"</h3>
+            <p> В Италии существует ресторан, который называется "Osteria Francescana", и он был признан лучшим рестораном в мире несколько раз. Этот ресторан находится в городе Модена и известен своими инновационными блюдами, которые сочетают традиционные и современные итальянские кулинарные техники.</p>
+          </div>
+        </div>    
+      </div>
     </div>
 
+    <div class="footer">
+      <div id="left_side">
+        <p>My Github: <a class="contact" href="https://github.com/yusuf-gh?tab=repositories">+998XXXXXXXXX</a></p>
+        <p>Instagram : <a class="contact" href="https://www.instagram.com/fake_it_un/">My_profile</a></p>
+        <p>Phone number: +99890 788-66-80</p>
+        <p>Telegram: @Lik0ris_tc</p>
 
+      </div>
+      <div id="right_side">
+          <p>The pages and the whole web side </p>
+          <p>was created in an educational context...</p>
 
-
-
-    <div id="footer">
+      </div>
 
     </div>
-
+    
 
     
-</body>
+  </body>
 </html>

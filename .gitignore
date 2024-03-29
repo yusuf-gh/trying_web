@@ -5,7 +5,7 @@ __pycache__/
 static/
 # C extensions
 *.so
-venv/
+venveaqz/
 .idea/
 # Distribution / packaging
 .Python

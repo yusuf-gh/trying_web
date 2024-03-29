@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'myapp/css/news.css' %}"
+    />
+    <title>News</title>
+</head>
+<body>
+    <div id="head">
+        <ul>
+          <!-- navbar -->
+          <li><a class="nav" href="http://127.0.0.1:8000/home">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/news">News</a></li>
+          <li><a href="#">About us</a></li>
+          <li class="li-last"><a href="#">...</a></li>
+        </ul>
+      </div>
+    
+    <div id="main_title2">
+        <h1>Новости индустрии ОБЩЕПИТА</h1>
+    </div>
+
+    <div class="news_template">
+        {% for i in info %}
+        <div class="news_paper">
+            <h1><a class="text-button" href="#">{{i.title}}</a></h1>
+            <img class="image"
+                src="{{ MEDIA_URL }}{{i.image.url}}"
+                alt="img">
+            <p class="information">{{i.description}}</p>
+            <a class="nw-button" href="#">Читать дальше</a>
+            <hr>
+        </div>
+        {% endfor %}
+
+        <div class="news_paper">
+            <h1><a class="text-button" href="#">Something</a></h1>
+            <img class="image"
+                src="../../static/myapp/img/restoran1.png"
+                alt="img">
+            <p class="information">Nothing</p>
+            <a class="nw-button" href="#">Читать дальше</a>
+            <hr>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div id="left_side">
+          <p>My Github: <a class="contact" href="https://github.com/yusuf-gh?tab=repositories">+998XXXXXXXXX</a></p>
+          <p>Instagram : <a class="contact" href="https://www.instagram.com/fake_it_un/">My_profile</a></p>
+          <p>Phone number: +99890 788-66-80</p>
+          <p>Telegram: @Lik0ris_tc</p>
+  
+        </div>
+        <div id="right_side">
+            <p>The pages and the whole web side </p>
+            <p>was created in an educational context...</p>
+  
+        </div>
+  
+    </div>
+    
+</body>
+</html>
