@@ -9,6 +9,7 @@ identify==2.5.33
 nodeenv==1.8.0
 numpy==1.26.3
 opencv-python==4.9.0.80
+pillow==10.4.0
 platformdirs==4.1.0
 pre-commit==3.6.0
 pytz==2023.3.post1
